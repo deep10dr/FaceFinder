@@ -21,6 +21,7 @@ class ImageData(BaseModel):
 @app.post("/user")
 async def upload_image(data: ImageData):   
     try:
+        print("Entering")
         embedding = generate_facenet512_embedding(data.image)
     
         result = search_embedding(embedding)
