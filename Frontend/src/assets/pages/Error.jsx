@@ -18,7 +18,7 @@ function Error() {
   };
 
   return (
-    <div className='h-screen w-full  bg-gradient-to-b from-[#a3bded] to-[#6991c7] flex flex-col justify-center items-center px-4 text-center'>
+    <div className='h-screen w-full  flex flex-col justify-center items-center px-4 text-center  bg-[url("/background/sky.jpg")] bg-center bg-cover'>
    
 
       <img src="/gif/404.gif" alt="404 Not Found" className='w-72 md:w-96 mb-1' />

@@ -146,7 +146,7 @@ function Home() {
   }, [imageCaptured]);
 
   return (
-    <div className="h-screen bg-gradient-to-b from-[#a3bded] to-[#6991c7] flex justify-center items-center">
+    <div className="h-screen  flex justify-center items-center">
       <div className="w-full max-w-5xl flex flex-col md:flex-row shadow-lg rounded-xl overflow-hidden bg-[#e3ebf9]">
         {/* Left Side - User Info */}
         <div className="md:w-1/2 p-6 shadow-2xl">

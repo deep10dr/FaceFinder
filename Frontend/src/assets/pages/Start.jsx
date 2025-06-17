@@ -2,7 +2,7 @@ import React from 'react'
 
 function Start() {
   return (
-    <div className='h-screen w-full bg-gradient-to-b from-[#a3bded] to-[#6991c7] flex justify-center items-center px-4'>
+    <div className='h-screen w-full flex justify-center items-center px-4'>
       <div className='flex flex-col items-center w-full max-w-xl'>
         <p className='text-4xl md:text-6xl font-extrabold mb-4 text-center text-white drop-shadow-md'>
           Find Who Are You?

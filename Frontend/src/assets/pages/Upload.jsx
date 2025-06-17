@@ -162,7 +162,7 @@ function Upload() {
   };
 
   return (
-    <div className='h-full md:h-screen w-full bg-gradient-to-b from-[#a3bded] to-[#6991c7] flex justify-center items-center px-4 overflow-auto p-5'>
+    <div className='h-full md:h-screen w-full flex justify-center items-center px-4 overflow-auto p-5'>
       <div className='flex flex-col-reverse md:flex-row w-full max-w-5xl bg-[#e3ebf9] rounded-xl shadow-lg p-2 md:p-4 space-y-6 md:space-y-0 md:space-x-2'>
 
         {/* Form Section */}

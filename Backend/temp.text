@@ -1,0 +1,35 @@
+import cv2 
+import face_recognition 
+ 
+def load_and_detect_face(image_path): 
+    # Load the image 
+    image = face_recognition.load_image_file(image_path) 
+    # Detect face locations 
+    face_locations = face_recognition.face_locations(image) 
+    # Encode the faces 
+    face_encodings = face_recognition.face_encodings(image, face_locations) 
+    return face_encodings 
+ 
+def compare_faces(image_path1, image_path2): 
+    # Load and encode faces from both images 
+    encodings1 = load_and_detect_face(image_path1) 
+    encodings2 = load_and_detect_face(image_path2) 
+ 
+    # Check if faces were found 
+    if len(encodings1) == 0 or len(encodings2) == 0: 
+        return "No faces found in one of the images." 
+ 
+    # Compare the first face encoding from each image 
+    results = face_recognition.compare_faces(encodings1, encodings2[0]) 
+     
+    return results[0]  # Returns True if faces match, False otherwise 
+ 
+# Example usage 
+image_path1 = "path_to_first_image.jpg" 
+image_path2 = "path_to_second_image.jpg" 
+ 
+are_same_person = compare_faces(image_path1, image_path2) 
+if are_same_person: 
+    print("The faces belong to the same person.") 
+else: 
+    print("The faces do not belong to the same person.") 

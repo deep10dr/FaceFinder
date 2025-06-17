@@ -63,7 +63,6 @@ async def new_user(
         img1 = base64_to_cv2_image(image)
         img2 = base64_to_cv2_image(res.data[0]['captured_image'])
         final = face_match(img1,img2)
-        print(final)
 
         if final:
             raise HTTPException(status_code=400, detail="User already exists")
