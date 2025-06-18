@@ -11,3 +11,5 @@ numpy
 python-multipart
 tensorflow==2.12.0
 tf-keras
+face-recognition          
+face_recognition_models
